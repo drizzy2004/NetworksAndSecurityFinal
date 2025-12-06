@@ -23,6 +23,7 @@ By completing this project, you will:
 ✓ Experience key differences between binary and text-based protocols
 
 💻 What You’ll Build
+
 The Server
 
 A multi-threaded Java server that:
