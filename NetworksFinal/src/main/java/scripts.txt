@@ -1,0 +1,14 @@
+-- Step 1: Run Server "click on Green Play button"
+-- Step 2: Run this to compile everything
+
+javac --module-path /Users/drakeauclaire/Downloads/javafx-sdk-25.0.1/lib \
+      --add-modules javafx.controls,javafx.fxml \
+      -d out \
+      $(find src/main/java -name "*.java")
+
+-- Step 3: -- Run this for a Client Window
+
+java --enable-native-access=javafx.graphics \
+     --module-path /Users/drakeauclaire/Downloads/javafx-sdk-25.0.1/lib:out \
+     --add-modules javafx.controls,javafx.fxml \
+     -m com.example.networksfinal/com.example.networksfinal.ChatClientGUI
